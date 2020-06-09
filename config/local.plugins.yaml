@@ -1,0 +1,12 @@
+- repo: Shougo/neosnippet.vim
+  if: 0
+
+- repo: SirVer/ultisnips
+  hook_add: |
+    let g:UltiSnipsExpandTrigger = "<tab>"
+    let g:UltiSnipsJumpForwardTrigger = "<tab>"
+    let g:UltiSnipsJumpBackwardTrigger = "<S-tab>"
+
+- { repo: honza/vim-snippets, on_source: SirVer/ultisnips }
+
+- repo: powerline/powerline
